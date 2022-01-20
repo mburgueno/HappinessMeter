@@ -30,6 +30,8 @@ html {
     --textSecondary: #F4D35E;
     --actionPrimary: #F95738;
     --black: #04030F;
+
+    --animationsDuration: 200ms;
 }
 /* End root vars */
 
@@ -547,3 +549,28 @@ a {
     padding: 2% 5%;
 }
 /* End try it section */
+
+/* Begin Transformations */
+.header__top-navigation__right-section__items-list__list-item__link:hover {
+    transform: scale(1.25);
+    transition: all var(--animationsDuration);
+    color: var(--actionPrimary);
+}
+
+.section__body__sub-section__call-to-action:hover {
+    transform: scale(1.15);
+    transition: all var(--animationsDuration);
+    background-color: var(--actionPrimary);
+    color: var(--textPrimary) !important;
+}
+
+.section__body__sub-section__pricing__card__features__call-to-action:hover {
+    transform: scale(1.15);
+    transition: all var(--animationsDuration);
+}
+
+.footer__left-section__links__link:hover {
+    transform: translateX(5%);
+    transition: all var(--animationsDuration);
+}
+/* End Transformations */
